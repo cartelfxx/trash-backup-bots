@@ -1,4 +1,6 @@
 # trash-backup-bots
 
 
-Bir süredir üzerinde çalışılan verilerin hızlı ve güvenli şekilde yönetilmesi için MySQL, log ve aramalarda yüksek performans sağlamak adına Elasticsearch, önbellekleme için Redis, sunucu güvenliği ve yedekleme işlemleri için TypeScript tabanlı guard & backup bot, ayrıca tüm bu yapıyı ilk önce tamamen amaç hızlı bir guard manager yapmak ve backup manager yapmak fakat bot o kadar çöp bir hale geldi ki yinede hızlı ama çok fazla eksiği gediği bulunuyor guardla alakalı bir sürü sorunu dediğim gibi bir çöp haline geldi.
+> Bir süredir “uçan kaçan sistem” hayaliyle yola çıktım. Veriler hızlı aksın diye MySQL, arama ve loglarda roket gibi çalışsın diye Elasticsearch, cache işi için de Redis'i sahaya sürdüm. Guard ve backup kısmına gelince, backup çok sağlam çalışıyor.
+
+Plan şuydu: “Guard gibi guard, backup gibi backup yaparım.” Ama gel zaman git zaman bot, Frankenstein’a döndü. Hâlâ hızlı mı? Evet. Ama içine o kadar çok şey sıkıştırdım ki artık nerden tutsam elimde kalıyor :D Guard tarafı desen aşlı başına bir çöplük projenin ismi gibi (trash)
